@@ -1,0 +1,42 @@
+#Track 1
+lane : 0
+
+# Object detected
+Human_detected : 0
+Car_detected   : 0
+Cone_detected  : 0
+
+padel                     : 0.0
+breaking                  : 0.0
+steering_angle            : 0.0
+
+position_x                : 0.0
+position_y                : 0.0
+position_z                : 0.0
+
+velocity_x                : 0.0
+velocity_y                : 0.0
+velocity_z                : 0.0
+
+overall_velocity          : 0.0
+
+linear_acceleration_x: 0
+linear_acceleration_y: 0
+linear_acceleration_z: 0
+overall_linear_acceleration: 0
+
+roll  : 0.0
+pitch : 0.0
+yaw   : 0.0
+
+angular_x                 : 0.0
+angular_y                 : 0.0
+angular_z                 : 0.0
+
+position_x_noise          : 0.0
+position_y_noise          : 0.0
+yaw_noise                 : 0.0
+
+position_x_filtered       : 0.0
+position_y_filtered       : 0.0
+yaw_filtered              : 0.0

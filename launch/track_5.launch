@@ -1,0 +1,15 @@
+<launch>
+    <node name="lidar_follower" pkg="sub_3_pkg" type="car_controller.py" output="screen"/>
+    
+    
+    <node name="csv_gen" pkg="sub_3_pkg" type="csv_gen.py"/>
+
+
+    <node name="odom" pkg="sub_3_pkg" type="odom.py"/>
+    <node name="odom_filtered" pkg="sub_3_pkg" type="odom_filtered.py"/>
+    <node name="odom_noise" pkg="sub_3_pkg" type="odom_noise.py"/>
+    
+    <node name="Imu_node" pkg="sub_3_pkg" type="Imu.py"/>
+
+    <rosparam command="load" file="$(find sub_3_pkg)/config/data.yaml"/>
+</launch>

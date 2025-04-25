@@ -1,0 +1,19 @@
+<launch>
+    <node name="custom_track" pkg="sub_3_pkg" type="custom_track.py" output="screen"/>
+
+    <node name="image_node" pkg="sub_3_pkg" type="image.py"/>
+
+    <node name="csv_gen" pkg="sub_3_pkg" type="csv_gen.py"/>
+
+    <node name="steering" pkg="sub_3_pkg" type="steering.py"/>
+    <node name="move" pkg="sub_3_pkg" type="move.py"/>
+    <node name="break" pkg="sub_3_pkg" type="break.py"/>
+
+    <node name="odom" pkg="sub_3_pkg" type="odom.py"/>
+    <node name="odom_filtered" pkg="sub_3_pkg" type="odom_filtered.py"/>
+    <node name="odom_noise" pkg="sub_3_pkg" type="odom_noise.py"/>
+    
+    <node name="Imu_node" pkg="sub_3_pkg" type="Imu.py"/>
+
+    <rosparam command="load" file="$(find sub_3_pkg)/config/data.yaml"/>
+</launch>
